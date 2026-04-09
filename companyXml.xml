@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ 
+ <bean class="fistcompany.CompanyLogic" id="s1">
+ 
+<property name="cid" value="15643"></property>
+<property name="cname" value="Oracle"></property>
+<property name = "cmail" value="oracle@gmail.com"></property>
+ 
+ </bean>
+
+</beans>
