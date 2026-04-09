@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #1877f2;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Landing content */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 400px;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .content h2 {
+      color: #1877f2;
+      margin-bottom: 20px;
+    }
+
+    .content input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .content button {
+      width: 100%;
+      padding: 10px;
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .content button:hover {
+      background-color: #145db2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Facebook</h1>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Sign Up</a></li>
+    </ul>
+  </div>
+
+  <!-- Landing Page Content -->
+  <div class="container">
+    <div class="content">
+      <h2>Welcome to Facebook</h2>
+      <input type="text" placeholder="Email or Phone">
+      <input type="password" placeholder="Password">
+      <button>Log In</button>
+      <p style="margin-top:15px;">Don't have an account? 
+      <a href="Register.html">Sign Up</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

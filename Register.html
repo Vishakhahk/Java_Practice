@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Account</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    
+    .navbar {
+      background-color: #1877f2;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Registration form */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+    }
+
+    .form-box {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    .form-box h2 {
+      color: #1877f2;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .form-box input, .form-box select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-box .dob {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-box .dob select {
+      width: 32%;
+    }
+
+    .form-box .gender {
+      display: flex;
+      justify-content: space-around;
+      margin: 10px 0;
+    }
+
+    .form-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #42b72a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-box button:hover {
+      background-color: #36a420;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Facebook</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Sign Up</a></li>
+    </ul>
+  </div>
+
+  <!-- Registration Form -->
+  <div class="container">
+    <div class="form-box">
+      <h2>Create New Account</h2>
+      <form action="face" method="post">
+        <input type="text" name="fname" placeholder="First name" required>
+        <input type="text" name="sname" placeholder="Surname" required>
+        <input type="email" name="email" placeholder="Mobile number or email" required>
+        <input type="password" name="pass" placeholder="New password" required>
+
+        <!-- Date of Birth -->
+        <div class="dob">
+          <select name="day" required>
+            <option value="">Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+          </select>
+          <select name="month" required>
+            <option value="">Month</option>
+            <option>Jan</option>
+            <option>Feb</option>
+            <option>Mar</option>
+            <option>Apr</option>
+            <option>May</option>
+            <option>Jun</option>
+            <option>Jul</option>
+            <option>Aug</option>
+            <option>Sep</option>
+            <option>Oct</option>
+            <option>Nov</option>
+            <option>Dec</option>
+          </select>
+          <select name="year" required>
+            <option value="">Year</option>
+            <option>1999</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+          </select>
+        </div>
+
+        <!-- Gender -->
+        <div class="gender">
+          <label><input type="radio" name="gender" value="Female" required> Female</label>
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Custom"> Custom</label>
+        </div>
+
+        <button>Log In</button>
+  <p style="margin-top:15px;">Don't have an account? 
+  <a href="Register.html">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
